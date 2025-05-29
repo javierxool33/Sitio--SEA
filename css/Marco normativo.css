@@ -567,6 +567,12 @@ body {
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
     overflow: hidden; /* Oculta cualquier contenido que sobresalga */
    border: 1px solid black;
+   display: flex;/* una funcion para ser responsivo los contenedores*/
+    flex-direction: row; /* Alinear los elementos en filas */
+    flex-wrap: wrap; /* los acomoda en columna si se hace pequeña la pestaña*/
+    justify-content: space-around; /* Alinear los elementos en el centro */
+    align-content: space-around;
+    align-items: center; /* Alinear los elementos en el centro verticalmente */
    
 }
 
@@ -591,84 +597,99 @@ body {
     
 
 /*-------------card secciones-------------------*/
-
-h2{
-    font-size: 54px;
-}
-
-.contenido{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    gap: 20px;
-}
-
-.seccion{
-    width:40%;
-    height: 20rem;
-    border: 1px solid black;
-
-    
-}
-
-/*media para que la seccion ocupe una sola fila es decir el 100% de la paguina*/
-
-@media (max-width: 768px) {
-    .seccion {
-        width: 100%; /* Cada caja ocupa una fila completa */
-    }
-}
-
+/* From Uiverse.io by joe-watson-sbf */ 
 .card {
+  width: 1500px;
+  height: 454px;
+  border-radius: 4px;
+  background: #fffcfc;
   display: flex;
-  width: 150px;
-  height: 250px;
-  background: linear-gradient(135deg, #4db6ac, #80deea);
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  gap: 5px;
+  padding: .4em;
+}
+
+
+.card p {
+  height: 100%;
+  flex: 1;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s;
+  background: #212121;
+  border: 1px solid #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+}
+
+a {
+  text-decoration: none;
   color: #ffffff;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+#p01{
+  background: #ad0d0d;
+  border: 1px solid #81701d;
+
 }
 
-.card:nth-child(1) {
-  background: linear-gradient(135deg, #ff8a65, #ffab91);
+#p02{
+  background: #674545;
+  border: 1px solid #81701d;
+
 }
 
-.card:nth-child(2) {
-  background: linear-gradient(135deg, #64b5f6, #90caf9);
+#p03{
+  background: #0dad52;
+  border: 1px solid #81701d;
+
 }
 
-.card:nth-child(3) {
-  background: linear-gradient(135deg, #81c784, #a5d6a7);
+#p04{
+  background: #0c3d34;
+  border: 1px solid #81701d;
+
 }
 
-.card:nth-child(4) {
-  background: linear-gradient(135deg, #ba68c8, #ce93d8);
+#p05{
+  background: #0d084a;
+  border: 1px solid #81701d;
+
 }
 
+
+.card p:hover {
+  flex: 5;
+}
+
+.card p span {
+  min-width: 14em;
+  padding: .5em;
+  text-align: center;
+  transform: rotate(-90deg);
+  transition: all .5s;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: .1em;
+}
+
+.card p:hover span {
+  transform: rotate(0);
+}
+
+/* Media query para hacer el card responsivo */
 @media (max-width: 768px) {
   .card {
-      width: 120px;
-      height: 200px;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-description {
+    font-size: 0.875rem;
   }
 }
-
-@media (max-width: 480px) {
-  .card {
-      width: 100px;
-      height: 150px;
-  }
-}
-

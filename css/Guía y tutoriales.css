@@ -566,27 +566,57 @@ body {
     padding: 5px; /* Espacio interno del contenedor */
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
     overflow: hidden; /* Oculta cualquier contenido que sobresalga */
-   border: 1px solid black;
+   
    
 }
 
-.parra{
-    margin: 10px auto; /* Espacio de 10px arriba y abajo dentro de la caja principal */
-    width: 100%; /* Ancho del menú */
-    padding: 5px; /* Espacio interno del contenedor */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
-    border: 1px solid black;
-
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  text-align: justify;
+  padding: 60px;
+  transition: transform 0.3s;
 }
 
-.aside{
-    margin: 10px auto; /* Espacio de 10px arriba y abajo dentro de la caja principal */
-    width: 100%; /* Ancho del menú */
-    padding: 5px; /* Espacio interno del contenedor */
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
-    border: 1px solid black;
+.card:hover {
+  transform: scale(1.05);
+}
 
+.card h3 {
+  margin: 0 0 10px;
+  color: #333;
+  text-align: center;
+}
 
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.card a {
+  display: block;
+  text-align: center;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.card a:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .card {
+      width: 100%;
+      padding: 15px;
+  }
 }
 /*-------------card secciones-------------------*/
 
