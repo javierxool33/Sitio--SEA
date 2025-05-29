@@ -263,10 +263,13 @@ button.siguiente {
   }
   .enlaces{
       text-decoration: none;
-      color: black;
+      font-size: 20px;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: bold;
+      color: white;
   }
   .enlaces:hover{
-      color: white;
+      color: black;
       text-decoration: none;
   }
 
@@ -316,7 +319,7 @@ button.siguiente {
   box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
   overflow: visible; /* Oculta cualquier contenido que sobresalga */
   border-radius: 20px;
-  background: #0c5747;
+  background: #00927c;
   position: -webkit-sticky;
   position: sticky;
   top: 60px; /* Ajusta este valor para que el menú esté justo debajo del carrusel */
@@ -365,7 +368,9 @@ button.siguiente {
   text-decoration: none; /* Sin subrayado */
   color: white; /* Color del enlace */
   padding: 5px 10px; /* Espaciado interno */
-
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
   border-radius: 10px; /* Borde redondeado a los enlaces */
   transition: background-color 0.3s ease; /* Para hacer más suave el cambio de color */
 }
@@ -724,16 +729,20 @@ height: 100%;
 .card-content {
   color: white;
   text-align: justify;
+  font-family: 'Noto Sans', sans-serif;
+  
 }
 
 .card-content h3 {
   font-size: 24px;
   margin-bottom: 15px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .card-content p {
   font-size: 20px;
   line-height: 1.6;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 /* Tarjeta especial - Tarjeta del medio con la imagen */

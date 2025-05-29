@@ -264,10 +264,13 @@ body {
     }
     .enlaces{
         text-decoration: none;
-        color: black;
+         font-size: 20px;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: bold;
+        color: white;
     }
     .enlaces:hover{
-        color: white;
+        color: black;
         text-decoration: none;
     }
   
@@ -322,7 +325,7 @@ body {
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del contenedor */
     overflow: visible; /* Oculta cualquier contenido que sobresalga */
     border-radius: 20px;
-    background: #0c5747;
+    background: #00927c;
     position: -webkit-sticky;
     position: sticky;
     top: 60px; /* Ajusta este valor para que el menú esté justo debajo del carrusel */
@@ -371,7 +374,9 @@ body {
     text-decoration: none; /* Sin subrayado */
     color: white; /* Color del enlace */
     padding: 5px 10px; /* Espaciado interno */
-  
+  font-size: 15px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
     border-radius: 10px; /* Borde redondeado a los enlaces */
     transition: background-color 0.3s ease; /* Para hacer más suave el cambio de color */
   }
@@ -599,6 +604,8 @@ background: linear-gradient(to right, rgba(19, 92, 92, 0.4) 35%, rgba(16, 158, 1
       display: flex;
       cursor: pointer;
       background-color: #333;
+      font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
   }
 
   .tab {
@@ -620,6 +627,8 @@ background: linear-gradient(to right, rgba(19, 92, 92, 0.4) 35%, rgba(16, 158, 1
       padding: 20px;
       background-color: #fff;
       border-top: 1px solid #ccc;
+      font-family: 'Noto Sans', sans-serif;
+ 
   }
 
   /* Estilo para la pestaña activa */
